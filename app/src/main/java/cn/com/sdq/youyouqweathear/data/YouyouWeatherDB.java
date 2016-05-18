@@ -62,7 +62,7 @@ public class YouyouWeatherDB {
         String[] groupBy=null;
         String having=null;
         String orderBy=null;
-        Cursor cursor=db.query("Province",selection,  selectionArgs,groupBy,  groupBy,having,orderBy);
+        Cursor cursor=db.query("Province",null,  null,null, null,null,null);
         if(cursor.moveToFirst()){
             do{
                 Province province=new Province();
