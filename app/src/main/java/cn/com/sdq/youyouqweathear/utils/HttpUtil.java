@@ -46,6 +46,7 @@ public class HttpUtil {
                     if (httpsURLConnection!=null){
                         httpsURLConnection.disconnect();
                     }
+
                 }
 
             }
