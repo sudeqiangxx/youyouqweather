@@ -53,14 +53,13 @@ public class Utility {
 
     }
     /*解析和处理服务器返回来的县级数据*/
-    public synchronized static boolean handleCountysResponse(YouyouWeatherDB youyouWeatherDB,
-
-                                                               String response,int citysId){
+    public synchronized static boolean
+    handleCountysResponse(YouyouWeatherDB youyouWeatherDB,
+                          String response,int citysId){
         if (!TextUtils.isEmpty(response)){
             String[] allcountys=response.split(",");
             if (allcountys!=null&&allcountys.length>0){
                 for (String c:allcountys){
-
                     String[] array=c.split("\\|");
                     County county=new County();
                     county.setCounCode(array[0]);
